@@ -64,7 +64,6 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  
   border-bottom: 5px solid #EC1839;
   border-right: 5px solid #b31228;
   bottom: 0;
@@ -151,6 +150,12 @@ body {
 .redes-sociales-iconos a:hover {
   background-color: #b31228;
   transform: scale(1.1);
+}
+
+.item-menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 
 
@@ -282,7 +287,7 @@ body {
 .titulo-seccion-sobre-mi  {
   position: relative;
   display: inline-block;
-  font-size: 40px;
+  font-size: 35px;
   color: white;
   font-weight: bold;
 }
@@ -400,6 +405,58 @@ body {
   left: 0;
   color: #EC1839;
 }
+
+
+
+
+/*---------HABILIDADES---------------------------------------*/
+.seccion-habilidades {
+  padding: 60px;
+  background-color: #151515;
+  color: white;
+}
+
+.contenedor-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.titulo-seccion-habilidades  {
+  position: relative;
+  display: inline-block;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+.habilidad {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.habilidad i {
+  font-size: 36px;
+  color: #EC1839;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.habilidad span {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+.habilidad:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
 
 
 
