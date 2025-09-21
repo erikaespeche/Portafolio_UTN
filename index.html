@@ -3,24 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Erika Espeche | Portafolio </title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+
+    <!-- Iconos Redes Sociales del Menu -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
-        <table>
-            <tr>
-                <td>Inicio</td>
-            </tr>
-            <tr>
-                <td>Acerca de</td>
-            </tr>
-            <tr>
-                <td>Proyectos</td>
-            </tr>
-            <tr>
-                <td>Contacto</td>
-            </tr>
-        </table>
-    </header>
+ <!--MENU -->
+  <div id="menu-lateral">
+    <h2 id="titulo-portafolio"><a href="./index.html">Erika Espeche</a></h2>
+
+    <div class="redes-sociales">
+        <div class="redes-sociales-iconos">
+          <a href="https://www.linkedin.com/in/erika-espeche-400774209/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/erikaespeche" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="mailto:erikasalomeespeche@gmail.com" class="gmail"><i class="bx bxl-gmail"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=541160060138&text=Hola%20Erika!" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+         
+          <!--<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
+          
+        </div>
+    </div>
+
+
+    <ul id="lista-menu">
+        <li class="item-menu"><a href="#inicio" class=""></a><i class="fas fa-home icono"></i>Inicio</li>
+        <li class="item-menu"><i class="fas fa-user icono"></i>Sobre mi</li>
+        <li class="item-menu"><i class="fas fa-folder icono"></i>Proyectos</li>
+        <li class="item-menu"><i class="fas fa-comment icono"></i>Contacto</li>
+    </ul>
+  </div>
+
+  <!--INICIO -->
+<div id="contenido-principal">
+    <section id="inicio">
+  <div class="contenedor-inicio">
+    <div class="texto-inicio">
+      <h1>Hola, mi nombre es <span class="nombre">Erika Espeche</span></h1>
+      <h2>Soy Estudiante de Programación</h2>
+      <p>
+       C++ | Python | C# | .NET | SQL | NoSQL | JAVASCRIPT | HTML | CSS | BOOSTRAP | GIT
+      </p>
+      <a href="./docs/CV-ERIKA ESPECHE_1.pdf" class="boton-cv"  target="_blank">Descargar CV</a>
+    </div>
+    <div class="imagen-inicio">
+      <img src="./img/foto_Erika_portada_1.jpeg" alt="Foto de Erika Espeche">
+    </div>
+  </div>
+</section>
+<!-- download="Erika Espeche-CV"-->
+
+<!--SOBRE MI -->
+<section id="sobre-mi">
+  <div class="contenedor-sobre-mi">
+    <div class="texto-sobre-mi">
+      <h2 class="titulo-seccion-sobre-mi">Sobre mí</h2>
+      <p>
+        Soy estudiante de la Universidad Tecnológica Nacional (UTN), cursando la Tecnicatura en Programación. Me considero una persona dinámica, organizada y responsable, con habilidades para el trabajo en equipo en entornos cambiantes. Me apasiona la creatividad y tengo un fuerte interés en el aprendizaje continuo y el crecimiento profesional.
+      </p>
+      <p>
+        Tengo experiencia en atención al cliente, resolución de problemas y optimización de procesos, con especial interés en el sector IT.
+      </p>
+    </div>
+
+    <div class="datos-sobre-mi">
+      <div class="bloque-cv">
+        <i class="bx bx-file icono-cv"></i>
+        <span>Currículum Vitae</span>
+      </div>
+
+      <div class="bloque-certificaciones">
+        <h3>Certificaciones</h3>
+        <ul class="lista-certificaciones">
+          <li>Introducción a la Programación con Python</li>
+          <li>Introducción al Desarrollo Frontend</li>
+          <li>Full Stack Java</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section><!-- FIN SOBRE MI -->
+</div>
+  
+
 </body>
 </html>
