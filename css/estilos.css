@@ -53,9 +53,9 @@ body {
   text-decoration: none;
 }
 
-#titulo-portafolio a:hover {
-  color: #670809;
-  text-decoration: none;
+
+.e-cursiva{
+  font-family: 'Clicker Script', cursive;
 }
 
 /* Esquinas rojas decorativas */
@@ -120,9 +120,7 @@ body {
   background-color: #333;
 }
 
-.activo {
-  background-color: #EC1839;
-}
+
 
 .icono {
   margin-right: 10px;
@@ -281,6 +279,22 @@ body {
   margin-bottom: 20px;
 }
 
+.titulo-seccion-sobre-mi  {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.titulo-seccion-sobre-mi-susbrayado{
+  background-color: #5F0404;
+  width: 100px;
+  height: 5px;
+  margin-top: -20px;
+}
+
+
 .texto-sobre-mi p {
   font-size: 16px;
   line-height: 1.6;
@@ -300,9 +314,41 @@ body {
   font-size: 18px;
   color: #EC1839;
 }
+.bloque-cv a{
+  color: #EC1839;
+  font-size: 22px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+.bloque-cv a:hover {
+  transform: scale(1.1);
+}
+
 
 .icono-cv {
   font-size: 28px;
+}
+
+.boton-descargar-cv {
+    display: inline-block;
+    padding: 5px;
+    background-color: #ec18186b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    /* font-weight: 600; */
+    transition: background 0.3s;
+    border: unset;
+    text-align: center;
+}
+
+.boton-descargar-cv a{
+  color: white;
+  font-size: 18px;
+}
+
+.boton-descargar-cv:hover {
+  background-color: #b31228;
 }
 
 .bloque-certificaciones h3 {
@@ -322,6 +368,31 @@ body {
   padding-left: 20px;
   position: relative;
 }
+
+.lista-certificaciones a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+/* Subrayado animado tipo linea */
+.lista-certificaciones li::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 30px;
+  width: 40%;
+  height: 1px;
+  background-color: #b31228;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.lista-certificaciones li:hover::after {
+  transform: scaleX(1);
+}
+
 
 .lista-certificaciones li::before {
   content: "✔";
