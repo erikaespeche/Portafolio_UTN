@@ -225,10 +225,13 @@ footer{
   background-color: #b31228;
 }
 
+
+
 .imagen-inicio img {
   max-width: 300px;
   border-radius: 10px;
   height: 400px;
+  margin: auto;
 }
 
 .imagen-inicio::before{
