@@ -225,9 +225,55 @@ footer{
   background-color: #b31228;
 }
 
+.imagen-inicio {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
 
-
+/* Imagen ajustada al contenedor */
 .imagen-inicio img {
+  width: 100%;
+  height: 135%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* Esquinas decorativas */
+.imagen-inicio::before,
+.imagen-inicio::after {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 52px;
+}
+
+.imagen-inicio::before {
+    top: -20px;
+    left: -9px;
+    border-right: none;
+    border-bottom: none;
+    border-top: 5px solid #EC1839;
+    border-left: 5px solid #b31228;
+}
+
+.imagen-inicio::after {
+    bottom: -126px;
+    right: -8px;
+    border-left: none;
+    border-top: none;
+    border-bottom: 5px solid #EC1839;
+    border-right: 5px solid #b31228;
+}
+
+
+/* .imagen-inicio img {
   max-width: 300px;
   border-radius: 10px;
   height: 400px;
@@ -260,7 +306,7 @@ footer{
     bottom: 120px;
     border-bottom: 5px solid #EC1839;
     border-right: 5px solid #b31228;
-}
+} */
 
 
 
@@ -547,7 +593,28 @@ footer{
   color: white;
 }
 
+/*MAIL y CELU*/
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0;
+  font-size: 16px;
+  color: white;
+}
 
+.dato-contacto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icono-contacto {
+  font-size: 24px;
+  color: #EC1839;
+}
+
+/*FORMULARIO*/
 .formulario-contacto {
   max-width: 600px;
   margin-top: 30px;
