@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   display: flex;
-  flex-direction: row; /* mantiene el menú lateral a la izquierda */
+  flex-direction: row; /* lo pongo xq mantiene el menu lateral a la izquierda */
   background-color: #151515;
 }
 #contenido-principal {
@@ -33,6 +38,17 @@ body {
 }
 
 
+/* #titulo-portafolio {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  padding: 10px 20px;
+  font-weight: 600;
+} */
+
 #titulo-portafolio {
   position: relative;
   text-align: center;
@@ -42,7 +58,21 @@ body {
   margin-top: 70px;
   padding: 10px 20px;
   font-weight: 600;
+  text-shadow: 0 0 10px #EC1839, 0 0 20px #b31228;
 }
+
+
+@keyframes resplandor {
+  0% { text-shadow: 0 0 10px rgba(236, 24, 57, 0.3); }
+  100% { text-shadow: 0 0 25px rgba(236, 24, 57, 0.7); }
+}
+
+#titulo-portafolio {
+  animation: resplandor 2s infinite alternate;
+}
+
+
+
 #titulo-portafolio a {
   color: white;
   text-decoration: none;
@@ -271,43 +301,6 @@ footer{
     border-bottom: 5px solid #EC1839;
     border-right: 5px solid #b31228;
 }
-
-
-/* .imagen-inicio img {
-  max-width: 300px;
-  border-radius: 10px;
-  height: 400px;
-  margin: auto;
-}
-
-.imagen-inicio::before{
-  left: -10px;
-  top: -30px;
-}
-
-.imagen-inicio::before{
-    content: "";
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    left: 1035px;
-    top: 40px;
-    border-top: 5px solid #EC1839;
-    border-left: 5px solid #b31228;
-}
-
-.imagen-inicio::after{
-
-    content: "";
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    right: 35px;
-    bottom: 120px;
-    border-bottom: 5px solid #EC1839;
-    border-right: 5px solid #b31228;
-} */
-
 
 
 /*---------SOBRE MI----------------------------------------*/
@@ -675,5 +668,60 @@ footer{
 }
 
 .boton-enviar:hover {
+  background-color: #b31228;
+}
+
+
+/*---------BOTON PARA IR AL INICIO---------------------------------------*/
+.boton-ir-inicio {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #EC1839;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 0 10px #EC1839;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.boton-ir-inicio:hover {
+  background-color: #b31228;
+  transform: scale(1.1);
+}
+
+.boton-ir-inicio i {
+  margin-right: 2px;
+}
+
+
+
+
+
+
+/*---------BARRA SCROLL---------------------------------------*/
+/* Estilo general para la barra de scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+  background: #222; /* color del fondo */
+}
+
+/* Color del scroll (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background-color: #EC1839; 
+  border-radius: 5px;
+  border: 2px solid #151515; 
+}
+
+/* Hover sobre el scroll */
+::-webkit-scrollbar-thumb:hover {
   background-color: #b31228;
 }
