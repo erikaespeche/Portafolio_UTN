@@ -1,3 +1,10 @@
+<!-- ====================================================
+     Autor: Erika Espeche :)
+     Fecha: 22/09/2025
+     ====================================================
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -202,7 +209,7 @@
    </div>
 
    <!-- Formulario -->
-   <form class="formulario-contacto">
+   <!-- <form class="formulario-contacto">
     <h2>Enviame un correo</h2>
     <div class="campo-formulario">
       <label for="nombre">Nombre</label>
@@ -217,7 +224,35 @@
       <textarea id="mensaje" name="mensaje" required></textarea>
     </div>
     <button type="submit" class="boton-enviar">Enviar Mensaje</button>
-   </form>
+   </form> -->
+
+
+<form action="https://formsubmit.co/erikasalomeespeche@gmail.com" method="POST" class="formulario-contacto">
+  <h2>Enviame un correo</h2>
+
+  <div class="campo-formulario">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required>
+  </div>
+
+  <div class="campo-formulario">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="campo-formulario">
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+  </div>
+
+  <!-- Campos ocultos -->
+  <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://erikaespeche.github.io/EnvioExitoso.html">
+
+  <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+</form>
+
 
    <!--
        <div class="redes-sociales">

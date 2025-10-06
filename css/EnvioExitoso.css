@@ -1,0 +1,52 @@
+/* =============================
+   Estilos Pagina de Envio Exitoso
+   Autor: Erika Espeche
+   ============================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.contenedor-EnvioExitoso {
+  text-align: center;
+  background: #ffffff;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.contenedor-EnvioExitoso h1 {
+  font-size: 2rem;
+  color: #e91e63; /* Rosa vibrante */
+  margin-bottom: 20px;
+}
+
+.contenedor-EnvioExitoso p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #e91e63;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #c2185b;
+}
