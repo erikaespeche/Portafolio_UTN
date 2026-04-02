@@ -839,7 +839,7 @@ footer{
   }
 
   #menu-lateral.activo {
-    transform: translateY(0);
+    transform: translateY(0)!important;
   }
 
   #contenido-principal {
@@ -1042,9 +1042,7 @@ body {
   transition: all 0.4s ease;
 }
 
-#menu-lateral.activo {
-    transform: translateY(0) !important;
-}
+
 
 }
 
