@@ -1,20 +1,18 @@
+<!DOCTYPE html>
 <!-- ====================================================
      Autor: Erika Espeche :)
      Fecha: 22/09/2025
      ====================================================
 -->
-
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Erika Espeche | Portafolio </title>
+  <title>Erika Espeche | Desarrolladora de Software</title>
+  <meta name="description" content="Portafolio de Erika Espeche, desarrolladora de software full stack: C#, .NET, JavaScript, Python y SQL.">
   <link rel="stylesheet" href="./css/estilos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
   <!-- Fuente de letras -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
@@ -35,11 +33,11 @@
 <body>
 
   <!-- Botón hamburguesa -->
-  <div class="boton-menu" id="botonMenu">
+  <button type="button" class="boton-menu" id="botonMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-lateral">
     <span></span>
     <span></span>
     <span></span>
-  </div>
+  </button>
 
 
   <!--MENU -->
@@ -49,10 +47,10 @@
 
     <div class="redes-sociales">
       <div class="redes-sociales-iconos">
-        <a href="https://www.linkedin.com/in/erika-espeche-400774209/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/erikaespeche" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:erikasalomeespeche@gmail.com" class="gmail"><i class="bx bxl-gmail"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=541160060138&text=Hola%20Erika!" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/erika-espeche-400774209/" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/erikaespeche" target="_blank" rel="noopener" class="github" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="mailto:erikasalomeespeche@gmail.com" class="gmail" aria-label="Enviar mail"><i class="bx bxl-gmail"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=541160060138&text=Hola%20Erika!" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
       </div>
     </div>
 
@@ -64,7 +62,7 @@
       <li class="item-menu"><a href="#proyectos"><i class="fas fa-folder icono"></i>Proyectos</a></li>
       <li class="item-menu"><a href="#contacto"><i class="fas fa-comment icono"></i>Contacto</a></li>
     </ul>
-    <footer>© 2025 - Erika Espeche.</footer>
+    <footer>© 2026 - Erika Espeche.</footer>
   </div>
 
   <!--CONTENEDOR DEL CONTENIDO -->
@@ -75,11 +73,11 @@
       <div class="contenedor-inicio">
         <div class="texto-inicio">
           <h1>Hola, mi nombre es <span class="nombre">Erika Espeche</span></h1>
-          <h2>Soy Estudiante de Programación</h2>
+          <h2>Desarrolladora de Software Full Stack</h2>
           <p>
-            C++ | Python | C# | .NET | SQL | NoSQL | JAVASCRIPT | HTML | CSS | BOOSTRAP | GIT
+            C# | .NET | JavaScript | Python | SQL | HTML | CSS | Bootstrap | Git
           </p>
-          <a href="./docs/CV/CV-ERIKA ESPECHE.pdf" class="boton-cv" target="_blank">Descargar CV</a>
+          <a href="./docs/CV/CV-ERIKA ESPECHE.pdf" class="boton-cv" target="_blank" rel="noopener">Descargar CV</a>
         </div>
         <div class="imagen-inicio">
           <img src="./img/Portada/foto_Erika_portada_1.jpeg" alt="Foto de Erika Espeche">
@@ -97,39 +95,25 @@
           <h2 class="titulo-seccion-sobre-mi">Sobre Mí</h2>
           <div class="titulo-seccion-sobre-mi-susbrayado"></div>
           <p>
-            Soy estudiante de la Universidad Tecnológica Nacional (UTN), actualmente cursando la Tecnicatura
-            Universitaria en Programación. Me defino como una persona dinámica, organizada y responsable, con facilidad
-            para adaptarme y trabajar en equipo en entornos cambiantes.
+            Soy desarrolladora de software y estudiante de la Tecnicatura Universitaria en Programación en la
+            Universidad Tecnológica Nacional (UTN FRGP). Trabajé como desarrolladora full stack construyendo
+            aplicaciones web con C# y .NET, landing pages e integraciones entre distintos sistemas, y hoy automatizo
+            procesos con Python, SQL y PowerShell.
           </p>
           <p>
-            Me apasiona la creatividad y tengo un fuerte compromiso con el aprendizaje continuo y el desarrollo
-            profesional. Cuento con experiencia en atención al cliente, resolución de problemas y optimización de
-            procesos, con especial interés en el sector IT.
+            Me defino como una persona dinámica, organizada y responsable, con facilidad para adaptarme y trabajar en
+            equipo. Me gusta resolver problemas reales con código y tengo un fuerte compromiso con el aprendizaje
+            continuo.
           </p>
         </div>
 
         <div class="datos-sobre-mi">
-          <div class="bloque-cv">
-            <!-- <button class="boton-descargar-cv">
-              <i class="bx bx-file icono-cv"></i>
-              <a href="./docs/CV/CV-ERIKA ESPECHE.pdf" target="_blank"><span>Descargar CV</span></a>
-
-            </button> -->
-
-          </div>
-
           <div class="bloque-certificaciones">
             <h3>Certificaciones</h3>
             <ul class="lista-certificaciones">
-              <a href="./docs/Certificaciones/PYTHON+(UTN).pdf" target="_blank">
-                <li>Introducción a la Programación con Python</li>
-              </a>
-              <a href="./docs/Certificaciones/FRONT END (ADA).pdf" target="_blank">
-                <li>Introducción al Desarrollo Frontend</li>
-              </a>
-              <a href="./docs/Certificaciones/FULL STACK JAVA (Codo a Codo).pdf" target="_blank">
-                <li>Full Stack Java</li>
-              </a>
+              <li><a href="./docs/Certificaciones/PYTHON+(UTN).pdf" target="_blank" rel="noopener">Introducción a la Programación con Python</a></li>
+              <li><a href="./docs/Certificaciones/FRONT END (ADA).pdf" target="_blank" rel="noopener">Introducción al Desarrollo Frontend</a></li>
+              <li><a href="./docs/Certificaciones/FULL STACK JAVA (Codo a Codo).pdf" target="_blank" rel="noopener">Full Stack Java</a></li>
             </ul>
           </div>
         </div>
@@ -164,33 +148,49 @@
       <div class="titulo-seccion-sobre-mi-susbrayado"></div>
       <div class="contenedor-proyectos">
 
+        <!-- TurnoTigre - Proyecto Final UTN -->
+        <div class="tarjeta-proyecto tarjeta-destacada">
+          <video class="imagen-proyecto" src="./img/Proyectos/[VIDEO] - TurnoTigre.mp4" poster="./img/Proyectos/Captura-TurnoTigre.jpg" controls muted playsinline preload="none" aria-label="Video recorriendo la app TurnoTigre"></video>
+          <span class="etiqueta-proyecto">Proyecto Final UTN · En desarrollo</span>
+          <h3>App Web: TurnoTigre</h3>
+          <p>Sistema de turnos médicos para los centros de salud del Municipio de Tigre. Los vecinos piden, confirman y
+            cancelan turnos online; el personal administra agendas y profesionales, y los médicos cargan la historia
+            clínica. Si un turno se cancela, se reasigna solo al siguiente paciente de la lista de espera.</p>
+          <p>Tecnologías utilizadas: C#, ASP.NET Core (Razor Pages), SQL Server, JavaScript, HTML y CSS. Desarrollado en
+            equipo (PentaCode).</p>
+          <div class="enlaces-proyecto">
+            <a href="./img/Proyectos/[VIDEO] - TurnoTigre.mp4" target="_blank" rel="noopener"><i class="bx bxl-youtube"></i> Ver video</a>
+            <a href="https://github.com/santiezsa/TurnoTigre" target="_blank" rel="noopener"><i class="bx bxl-github"></i> Repo GitHub</a>
+          </div>
+        </div>
+
         <!-- Conf Bs As -->
         <div class="tarjeta-proyecto">
-          <img src="./img/Proyectos/Captura-ConferenciaBsAs.PNG" alt="Conferencia Bs. As." class="imagen-proyecto">
+          <img src="./img/Proyectos/Captura-ConferenciaBsAs.PNG" alt="Captura de la app Conferencia Bs. As." class="imagen-proyecto">
           <h3>App Web: Conferencia Bs. As.</h3>
           <p>Desarrollo de una aplicación web dinámica con integración a base de datos.</p>
-          <p>Tecnologías utilizadas: HTML, CSS, Bootstrap,JavaScript, Java y MySQL.</p>
+          <p>Tecnologías utilizadas: HTML, CSS, Bootstrap, JavaScript, Java y MySQL.</p>
           <div class="enlaces-proyecto">
-            <a href="https://erikaespeche.github.io/ConferenciaBsAs/" target="_blank"><i
+            <a href="https://erikaespeche.github.io/ConferenciaBsAs/" target="_blank" rel="noopener"><i
                 class="bx bx-link-external"></i> Ver página</a>
-            <a href="https://github.com/erikaespeche/Conferencia-BsAs" target="_blank"><i class="bx bxl-github"></i>
+            <a href="https://github.com/erikaespeche/Conferencia-BsAs" target="_blank" rel="noopener"><i class="bx bxl-github"></i>
               Repo GitHub</a>
-            <a href="./img/Proyectos/[VIDEO] - ConferenciaBsAs.mp4" target="_blank"><i class="bx bxl-youtube"></i> Ver
+            <a href="./img/Proyectos/[VIDEO] - ConferenciaBsAs.mp4" target="_blank" rel="noopener"><i class="bx bxl-youtube"></i> Ver
               video</a>
           </div>
         </div>
 
         <!-- Rick and Morty -->
         <div class="tarjeta-proyecto">
-          <img src="./img/Proyectos/Captura-RickAndMorty.PNG" alt="Conferencia Bs. As." class="imagen-proyecto">
+          <img src="./img/Proyectos/Captura-RickAndMorty.PNG" alt="Captura de la página Rick and Morty" class="imagen-proyecto">
           <h3>Página Web: Rick and Morty</h3>
-          <p>Desarrollo de una página web interactiva que permite explorar personajes de la serie Rick and Morty.
-            Incluye filtros por género, paginación dinámica y diseño</p>
-          <p>Tecnologías utilizadas: HTML, CSS, JavaScript y conexion a API</p>
+          <p>Página web interactiva que permite explorar los personajes de la serie Rick and Morty, con filtros por
+            género, paginación dinámica y diseño responsive.</p>
+          <p>Tecnologías utilizadas: HTML, CSS, JavaScript y consumo de API REST.</p>
           <div class="enlaces-proyecto">
-            <a href="https://erikaespeche.github.io/RICKANDMORTY/" target="_blank"><i class="bx bx-link-external"></i>
+            <a href="https://erikaespeche.github.io/RICKANDMORTY/" target="_blank" rel="noopener"><i class="bx bx-link-external"></i>
               Ver página</a>
-            <a href="https://github.com/erikaespeche/RICKANDMORTY" target="_blank"><i class="bx bxl-github"></i> Repo
+            <a href="https://github.com/erikaespeche/RICKANDMORTY" target="_blank" rel="noopener"><i class="bx bxl-github"></i> Repo
               GitHub</a>
           </div>
         </div>
@@ -198,27 +198,27 @@
 
         <!-- Gestor de catalogo -->
         <div class="tarjeta-proyecto">
-          <img src="./img/Proyectos/Captura-GestorArticulos.jpg" alt="Conferencia Bs. As." class="imagen-proyecto">
-          <h3>App Escritorio: Gestor de Catalogo </h3>
-          <p>Desarrollo de una aplicación de escritorio, con conexión a base de datos. Permite gestionar artículos
-            mediante operaciones de alta, modificación, eliminación y visualización detallada.</p>
-          <p>Tecnologías utilizadas: C#, .NET, SQL Server.</p>
+          <img src="./img/Proyectos/Captura-GestorArticulos.jpg" alt="Captura del Gestor de Catálogo" class="imagen-proyecto">
+          <h3>App Escritorio: Gestor de Catálogo</h3>
+          <p>Aplicación de escritorio con conexión a base de datos. Permite gestionar artículos mediante operaciones de
+            alta, modificación, eliminación y visualización detallada.</p>
+          <p>Tecnologías utilizadas: C#, .NET (WinForms) y SQL Server.</p>
           <div class="enlaces-proyecto">
-            <a href="" target="_blank"><i class="bx bx-link-external"></i> Ver video (Proximamente)</a>
-            <a href="https://github.com/Jooseaguirre/tp-winform-equipo-8b" target="_blank"><i class="bx bxl-github"></i>
+            <span class="enlace-pendiente"><i class="bx bx-time-five"></i> Video próximamente</span>
+            <a href="https://github.com/Jooseaguirre/tp-winform-equipo-8b" target="_blank" rel="noopener"><i class="bx bxl-github"></i>
               Repo GitHub</a>
           </div>
         </div>
 
         <!-- Sistema de Facturacion -Python -->
         <div class="tarjeta-proyecto">
-          <img src="./img/Proyectos/Captura-Facturacion-Python.jpg" alt="Conferencia Bs. As." class="imagen-proyecto">
-          <h3>App Escritorio: Sistema de Facturacion </h3>
-          <p>Desarrollo de una aplicación de escritorio en Python para la gestión de facturas.</p>
+          <img src="./img/Proyectos/Captura-Facturacion-Python.jpg" alt="Captura del Sistema de Facturación" class="imagen-proyecto">
+          <h3>App Escritorio: Sistema de Facturación</h3>
+          <p>Aplicación de escritorio en Python para la gestión de facturas.</p>
           <p>Tecnologías utilizadas: Python.</p>
           <div class="enlaces-proyecto">
-            <a href="" target="_blank"><i class="bx bx-link-external"></i> Ver video (Proximamente)</a>
-            <a href="https://github.com/erikaespeche/Sistema-de-Facturacion-Python" target="_blank"><i
+            <span class="enlace-pendiente"><i class="bx bx-time-five"></i> Video próximamente</span>
+            <a href="https://github.com/erikaespeche/Sistema-de-Facturacion-Python" target="_blank" rel="noopener"><i
                 class="bx bxl-github"></i> Repo GitHub</a>
           </div>
         </div>
@@ -310,7 +310,7 @@
 
 
     <!-- BOTON PARA IR AL INICIO -->
-    <a href="#inicio" class="boton-ir-inicio">
+    <a href="#inicio" class="boton-ir-inicio" aria-label="Volver al inicio">
       <i class="fas fa-arrow-up"></i>
     </a>
 
@@ -320,7 +320,7 @@
 
 
   <!-- SCRIPT JS -->
-<script src="../Portafolio_v1/js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
